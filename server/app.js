@@ -9,7 +9,13 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: [
+        'http://localhost:5173',
+        /\.vercel\.app$/          // allows any *.vercel.app domain
+    ],
+    credentials: true
+}));
 app.use(express.json());
 
 // Basic Route for testing
