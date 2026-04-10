@@ -1,0 +1,36 @@
+# Unnecessary / internal files
+client-basic/
+contracts/
+BACKEND_AGENT.md
+FRONTEND_AGENT.md
+server/src/scripts/
+
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment variables (keep secrets safe)
+server/.env
+client/.env
+.env
+
+# Build output
+client/dist/
+client/build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Vite cache
+client/.vite/
