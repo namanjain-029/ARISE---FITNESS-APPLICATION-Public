@@ -71,41 +71,51 @@ ARISE---FITNESS-APPLICATION/
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started (After downloading ZIP from GitHub)
 
-### Prerequisites
-- Node.js v18+
-- MongoDB (local or Atlas)
+### ✅ Prerequisites
+Before starting, make sure you have installed:
+- [Node.js v18+](https://nodejs.org/) — check with `node -v`
+- [MongoDB Community](https://www.mongodb.com/try/download/community) — must be running locally
 
-### 1. Clone the repository
+---
 
-```bash
-git clone https://github.com/namanjain-029/ARISE---FITNESS-APPLICATION-Public.git
-cd ARISE---FITNESS-APPLICATION-Public
-```
+### Step 1 — Open in VS Code
 
-### 2. Setup the Server
+Unzip the downloaded folder and open it in VS Code.  
+Open the **integrated terminal** (`Ctrl + `` ` ``).
 
-```bash
-cd server
-npm install
-```
+---
 
-Create a `.env` file inside `/server`:
+### Step 2 — Create the `.env` file
+
+Inside the `server/` folder, create a new file called **`.env`** and paste:
 
 ```env
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/sololeveling
-JWT_SECRET=your_secret_key_here
+JWT_SECRET=supersecretjwtkey_for_sololeveling
 ```
 
-Start the server:
+---
+
+### Step 3 — Run the Backend Server
+
+In the VS Code terminal:
 
 ```bash
+cd server
+npm install
 npm run dev
 ```
 
-### 3. Setup the Client
+> ✅ You should see: `Server running on port 5000`
+
+---
+
+### Step 4 — Run the Frontend Client
+
+Open a **second terminal** in VS Code (`+` button in terminal panel):
 
 ```bash
 cd client
@@ -113,9 +123,19 @@ npm install
 npm run dev
 ```
 
-### 4. Open the app
+> ✅ You should see: `Local: http://localhost:5173`
 
-Visit **http://localhost:5173** in your browser.
+---
+
+### Step 5 — Open the App
+
+Visit **[http://localhost:5173](http://localhost:5173)** in your browser.
+
+Register a new account and start training! ⚔️
+
+---
+
+> **Note:** Both `npm run dev` terminals must stay running while using the app.
 
 ---
 
